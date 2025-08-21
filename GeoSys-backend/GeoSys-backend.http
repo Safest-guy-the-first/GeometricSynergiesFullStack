@@ -1,0 +1,22 @@
+@GeoSys_backend_HostAddress = http://localhost:5178
+
+GET {{GeoSys_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{GeoSys_backend_HostAddress}}/gs/UserModel/daoy10
+Accept: application/json
+###
+
+POST {{GeoSys_backend_HostAddress}}/gs/UserModel
+Content-Type: application/json
+{
+  "firstName": "David",
+  "lastName": "Oyem",
+  "email": "oyemdavid12@gmail.com",
+  "uniqueUserId":"null",
+  "phone": "07065709029",
+  "department": "Operations",
+  "password": "password"
+}
+###
